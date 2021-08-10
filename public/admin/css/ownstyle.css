@@ -1,0 +1,16 @@
+.header{
+    background-color: skyblue;
+}
+.sidebar .sidebar-menu > li.active > a, 
+.sidebar .sidebar-menu > li.active > a:hover{
+    background-color: skyblue !important;
+}
+::-webkit-scrollbar-thumb{
+    background-color: skyblue;
+}
+a:not(.btn):hover{
+    color: skyblue;
+}
+.header .header-block-nav > ul > li > a:hover{
+    color: black;
+}
