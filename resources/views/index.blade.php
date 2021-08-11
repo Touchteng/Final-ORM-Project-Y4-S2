@@ -149,11 +149,6 @@
                               <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
                             </figcaption>
                           </figure>                        
-                          <div class="aa-product-hvr-content">
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
-                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>                          
-                          </div>
                           <!-- product badge -->
                           <span class="aa-badge aa-sale" href="#">SALE!</span>
                         </li>
@@ -166,12 +161,7 @@
                               <h4 class="aa-product-title"><a href="#">Happy Feet Baby Booties</a></h4>
                               <span class="aa-product-price">$45.50</span>
                             </figcaption>
-                          </figure>                         
-                          <div class="aa-product-hvr-content">
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
-                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
-                          </div>
+                          </figure>
                           <!-- product badge -->
                            <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
                         </li>
@@ -184,12 +174,7 @@
                               <h4 class="aa-product-title"><a href="#">Smiling Cow Booties</a></h4>
                               <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
                             </figcaption>
-                          </figure>                         
-                          <div class="aa-product-hvr-content">
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
-                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
-                          </div>
+                          </figure>
                         </li>
                         <!-- start single product item -->
                         <li>
@@ -200,12 +185,7 @@
                               <h4 class="aa-product-title"><a href="#">Sari Storage Basket 10H</a></h4>
                               <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
                             </figcaption>
-                          </figure>                          
-                          <div class="aa-product-hvr-content">
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
-                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
-                          </div>
+                          </figure>
                           <!-- product badge -->
                           <span class="aa-badge aa-hot" href="#">HOT!</span>
                         </li>
@@ -218,12 +198,7 @@
                               <h4 class="aa-product-title"><a href="#">Cat Hat & Mittens Set</a></h4>
                               <span class="aa-product-price">$45.50</span>
                             </figcaption>
-                          </figure>                          
-                          <div class="aa-product-hvr-content">
-                           <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
-                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
-                          </div>
+                          </figure>
                         </li>
                         <!-- start single product item -->
                         <li>
@@ -234,12 +209,7 @@
                               <h4 class="aa-product-title"><a href="#">Cotton Bunny Doll (Girl)</a></h4>
                               <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
                             </figcaption>
-                          </figure>                          
-                          <div class="aa-product-hvr-content">
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
-                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
-                          </div>
+                          </figure>
                         </li>
                         <!-- start single product item -->
                         <li>
@@ -250,12 +220,7 @@
                               <h4 class="aa-product-title"><a href="#">Bright Day Hamper</a></h4>
                               <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
                             </figcaption>
-                          </figure>                          
-                          <div class="aa-product-hvr-content">
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
-                           <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
-                          </div>
+                          </figure>
                           <!-- product badge -->
                           <span class="aa-badge aa-sale" href="#">SALE!</span>
                         </li>
@@ -268,12 +233,7 @@
                               <h4 class="aa-product-title"><a href="#">Bright Bits Oval Basket</a></h4>
                               <span class="aa-product-price">$45.50</span>
                             </figcaption>
-                          </figure>                         
-                          <div class="aa-product-hvr-content">
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
-                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
-                          </div>
+                          </figure>
                           <!-- product badge -->
                            <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
                         </li>                        
@@ -439,12 +399,7 @@
                               <h4 class="aa-product-title"><a href="#">Dead Sea Mud & Olive Oil Soap</a></h4>
                               <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
                             </figcaption>
-                          </figure>                         
-                          <div class="aa-product-hvr-content">
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
-                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>                            
-                          </div>
+                          </figure>
                           <!-- product badge -->
                           <span class="aa-badge aa-sale" href="#">SALE!</span>
                         </li>
@@ -457,12 +412,7 @@
                               <h4 class="aa-product-title"><a href="#">Mudra Hands Candleholders</a></h4>
                               <span class="aa-product-price">$45.50</span>
                             </figcaption>
-                          </figure>                         
-                          <div class="aa-product-hvr-content">
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
-                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
-                          </div>
+                          </figure>
                           <!-- product badge -->
                            <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
                         </li>
@@ -475,12 +425,7 @@
                               <h4 class="aa-product-title"><a href="#">Kisii Heart Dish</a></h4>
                               <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
                             </figcaption>
-                          </figure>                          
-                          <div class="aa-product-hvr-content">
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
-                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
-                          </div>
+                          </figure>
                         </li>
                         <!-- start single product item -->
                         <li>
@@ -491,12 +436,7 @@
                               <h4 class="aa-product-title"><a href="#">“You Rock” Rock</a></h4>
                               <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
                             </figcaption>
-                          </figure>                          
-                          <div class="aa-product-hvr-content">
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
-                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
-                          </div>
+                          </figure>
                           <!-- product badge -->
                           <span class="aa-badge aa-hot" href="#">HOT!</span>
                         </li>
@@ -509,12 +449,7 @@
                               <h4 class="aa-product-title"><a href="#">Sweet Heart Bracelet</a></h4>
                               <span class="aa-product-price">$45.50</span>
                             </figcaption>
-                          </figure>                         
-                          <div class="aa-product-hvr-content">
-                           <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
-                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
-                          </div>
+                          </figure>
                         </li>
                         <!-- start single product item -->
                         <li>
@@ -525,12 +460,7 @@
                               <h4 class="aa-product-title"><a href="#">Love Note Heart Dish</a></h4>
                               <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
                             </figcaption>
-                          </figure>                         
-                          <div class="aa-product-hvr-content">
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
-                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
-                          </div>
+                          </figure>
                         </li>
                         <!-- start single product item -->
                         <li>
@@ -541,12 +471,7 @@
                               <h4 class="aa-product-title"><a href="#">Teacher Dish</a></h4>
                               <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
                             </figcaption>
-                          </figure>                          
-                          <div class="aa-product-hvr-content">
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
-                           <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
-                          </div>
+                          </figure>
                           <!-- product badge -->
                           <span class="aa-badge aa-sale" href="#">SALE!</span>
                         </li>
@@ -559,12 +484,7 @@
                               <h4 class="aa-product-title"><a href="#">Share the Love Paperweight</a></h4>
                               <span class="aa-product-price">$45.50</span>
                             </figcaption>
-                          </figure>                          
-                          <div class="aa-product-hvr-content">
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
-                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
-                            <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
-                          </div>
+                          </figure>
                           <!-- product badge -->
                            <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
                         </li>                        
@@ -687,7 +607,7 @@
               <div class="aa-support-single">
                 <span class="fa fa-truck"></span>
                 <h4>FREE SHIPPING</h4>
-                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nobis.</P>
+                <P>All of this makes free shipping a powerful marketing tool that you can leverage to increase sales.</P>
               </div>
             </div>
             <!-- single support -->
@@ -695,7 +615,7 @@
               <div class="aa-support-single">
                 <span class="fa fa-clock-o"></span>
                 <h4>30 DAYS MONEY BACK</h4>
-                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nobis.</P>
+                <P>The 30-Day Money-Back Guarantee is our way of ensuring your complete satisfaction with our products.</P>
               </div>
             </div>
             <!-- single support -->
@@ -703,7 +623,7 @@
               <div class="aa-support-single">
                 <span class="fa fa-phone"></span>
                 <h4>SUPPORT 24/7</h4>
-                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nobis.</P>
+                <P>24/7 support means customers can get help and find answers to questions as soon as they come up—24/7 and in real-time</P>
               </div>
             </div>
           </div>
@@ -722,39 +642,26 @@
               <!-- single slide -->
               <li>
                 <div class="aa-testimonial-single">
-                <img class="aa-testimonial-img" src="img/testimonial-img-2.jpg" alt="testimonial img">
+                <img class="aa-testimonial-img" src="img/person1.jpg" alt="testimonial img">
                   <span class="fa fa-quote-left aa-testimonial-quote"></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui!consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui.</p>
+                  <p>To be successful as a team leader, you should have a track record of team motivation and positive sales results.</p>
                   <div class="aa-testimonial-info">
-                    <p>Allison</p>
-                    <span>Designer</span>
-                    <a href="#">Dribble.com</a>
-                  </div>
-                </div>
-              </li>
-              <!-- single slide -->
-              <li>
-                <div class="aa-testimonial-single">
-                <img class="aa-testimonial-img" src="img/testimonial-img-1.jpg" alt="testimonial img">
-                  <span class="fa fa-quote-left aa-testimonial-quote"></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui!consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui.</p>
-                  <div class="aa-testimonial-info">
-                    <p>KEVIN MEYER</p>
-                    <span>CEO</span>
-                    <a href="#">Alphabet</a>
+                    <p>CHHORN Soktheng</p>
+                    <span>Team Leader</span>
+                    <a href="#">CEO of Souvenir Shop</a>
                   </div>
                 </div>
               </li>
                <!-- single slide -->
               <li>
                 <div class="aa-testimonial-single">
-                <img class="aa-testimonial-img" src="img/testimonial-img-3.jpg" alt="testimonial img">
+                <img class="aa-testimonial-img" src="img/person2.jpg" alt="testimonial img">
                   <span class="fa fa-quote-left aa-testimonial-quote"></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui!consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui.</p>
+                  <p>Dash Delivery, Inc. sends uniformed drivers in clearly marked professional vehicles. We have an exceptional reputation and a cutting edge communication system with two way data transfer in every vehicle. If you are currently using an in house courier for your delivery needs please check our cost analysis page to see just how much you can save with Dash.</p>
                   <div class="aa-testimonial-info">
-                    <p>Luner</p>
-                    <span>COO</span>
-                    <a href="#">Kinatic Solution</a>
+                    <p>TOUCH Teng</p>
+                    <span>Full Time</span>
+                    <a href="#">Deliver</a>
                   </div>
                 </div>
               </li>
@@ -778,17 +685,17 @@
               <div class="col-md-4 col-sm-4">
                 <div class="aa-latest-blog-single">
                   <figure class="aa-blog-img">                    
-                    <a href="#"><img src="img/promo-banner-1.jpg" alt="img"></a>  
+                    <a href="#"><img src="img/blog1.jpg" alt="img"></a>  
                       <figcaption class="aa-blog-img-caption">
                       <span href="#"><i class="fa fa-eye"></i>5K</span>
                       <a href="#"><i class="fa fa-thumbs-o-up"></i>426</a>
                       <a href="#"><i class="fa fa-comment-o"></i>20</a>
-                      <span href="#"><i class="fa fa-clock-o"></i>June 26, 2016</span>
+                      <span href="#"><i class="fa fa-clock-o"></i>June 26, 2021</span>
                     </figcaption>                          
                   </figure>
                   <div class="aa-blog-info">
-                    <h3 class="aa-blog-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ad? Autem quos natus nisi aperiam, beatae, fugiat odit vel impedit dicta enim repellendus animi. Expedita quas reprehenderit incidunt, voluptates corporis.</p> 
+                    <h3 class="aa-blog-title"><a href="#">Rome souvenir stalls from tourist sites</a></h3>
+                    <p>Souvenir stalls - which sell key-rings, decorative plates, figurines and other trinkets - will be removed from their posts in front of Rome's monuments, as well as caminon bars (mobile snack bars). Rome's mayor Virginia Raggi said the changes are intended to protect Rome's heritage and also improve safety in the immediate vicinity of tourist-dense places such as the Colosseum, Pantheon, the Spanish Steps and the Trevi Fountain.</p> 
                     <a href="#" class="aa-read-mor-btn">Read more <span class="fa fa-long-arrow-right"></span></a>
                   </div>
                 </div>
@@ -797,17 +704,17 @@
               <div class="col-md-4 col-sm-4">
                 <div class="aa-latest-blog-single">
                   <figure class="aa-blog-img">                    
-                    <a href="#"><img src="img/promo-banner-3.jpg" alt="img"></a>  
+                    <a href="#"><img src="img/blog2.jpg" alt="img"></a>  
                       <figcaption class="aa-blog-img-caption">
                       <span href="#"><i class="fa fa-eye"></i>5K</span>
                       <a href="#"><i class="fa fa-thumbs-o-up"></i>426</a>
                       <a href="#"><i class="fa fa-comment-o"></i>20</a>
-                      <span href="#"><i class="fa fa-clock-o"></i>June 26, 2016</span>
+                      <span href="#"><i class="fa fa-clock-o"></i>June 26, 2021</span>
                     </figcaption>                          
                   </figure>
                   <div class="aa-blog-info">
-                    <h3 class="aa-blog-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ad? Autem quos natus nisi aperiam, beatae, fugiat odit vel impedit dicta enim repellendus animi. Expedita quas reprehenderit incidunt, voluptates corporis.</p> 
+                    <h3 class="aa-blog-title"><a href="#">Cambodia Souvenirs</a></h3>
+                    <p>Cambodian is known for its tradition of silk weaving throughout the history of centuries. If you are looking for a feature of Cambodian fashion, it must be Pidan silk. For those who don’t know, Pidan is a typical kind of ikat silk used in Cambodian wedding traditions, funerals, or Buddhist festivals.</p> 
                      <a href="#" class="aa-read-mor-btn">Read more <span class="fa fa-long-arrow-right"></span></a>         
                   </div>
                 </div>
@@ -816,17 +723,17 @@
               <div class="col-md-4 col-sm-4">
                 <div class="aa-latest-blog-single">
                   <figure class="aa-blog-img">                    
-                    <a href="#"><img src="img/promo-banner-1.jpg" alt="img"></a>  
+                    <a href="#"><img src="img/blog3.jpg" alt="img"></a>  
                       <figcaption class="aa-blog-img-caption">
                       <span href="#"><i class="fa fa-eye"></i>5K</span>
                       <a href="#"><i class="fa fa-thumbs-o-up"></i>426</a>
                       <a href="#"><i class="fa fa-comment-o"></i>20</a>
-                      <span href="#"><i class="fa fa-clock-o"></i>June 26, 2016</span>
+                      <span href="#"><i class="fa fa-clock-o"></i>June 26, 2021</span>
                     </figcaption>                          
                   </figure>
                   <div class="aa-blog-info">
-                    <h3 class="aa-blog-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ad? Autem quos natus nisi aperiam, beatae, fugiat odit vel impedit dicta enim repellendus animi. Expedita quas reprehenderit incidunt, voluptates corporis.</p> 
+                    <h3 class="aa-blog-title"><a href="#">Don’t Buy Bad Souvenirs</a></h3>
+                    <p>If it is, and if you buy it, you're just going to encourage whoever killed it, crafted it or made it, to do it all over again. Plus, you're most likely going to break an international law when you go through customs, and that's always a situation to avoid--don't bring home a suitcase full of trouble!</p> 
                     <a href="#" class="aa-read-mor-btn">Read more <span class="fa fa-long-arrow-right"></span></a>
                   </div>
                 </div>
