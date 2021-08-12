@@ -73,7 +73,7 @@
                 <div class="aa-cartbox-summary">
                   <ul>
                     <li>
-                      <a class="aa-cartbox-img" href="#"><img src="img/woman-small-2.jpg" alt="img"></a>
+                      <a class="aa-cartbox-img" href="#"><img src="img/product/1.jpg" alt="img"></a>
                       <div class="aa-cartbox-info">
                         <h4><a href="#">Product Name</a></h4>
                         <p>1 x $250</p>
@@ -81,7 +81,7 @@
                       <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
                     </li>
                     <li>
-                      <a class="aa-cartbox-img" href="#"><img src="img/woman-small-1.jpg" alt="img"></a>
+                      <a class="aa-cartbox-img" href="#"><img src="img/product/2.jpg" alt="img"></a>
                       <div class="aa-cartbox-info">
                         <h4><a href="#">Product Name</a></h4>
                         <p>1 x $250</p>
@@ -134,8 +134,8 @@
           <div class="navbar-collapse collapse">
             <!-- Left nav -->
             <ul class="nav navbar-nav">
-              <li><a href="{{asset('/')}}">Home</a></li>
-              <li><a href="#">Products</a></li>
+              <li><a href="{{url('/')}}">Home</a></li>
+              <li><a href="{{url('/product')}}">Products</a></li>
               <li><a href="#">Contact</a></li>            
               <li><a href="#">About</a></li>
             </ul>
