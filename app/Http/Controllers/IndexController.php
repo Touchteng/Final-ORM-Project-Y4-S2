@@ -9,11 +9,15 @@ class indexController extends Controller
 {
     public function index()
     {
-        return view('index');
+        return view('pages.index');
     }
     public function product()
     {
-        return view('product');
+        return view('pages.product');
     }
-    
+    public function about()
+    {
+        return view('pages.about');
+    }
+
 }
