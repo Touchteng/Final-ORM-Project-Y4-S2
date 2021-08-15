@@ -50,29 +50,29 @@ Route::prefix('backend')->group(function() {
     Route::get('member/detail/{id}', 'MemberController@detail');
 
     //Location
-    Route::get('location', 'LocationController@index');
-    Route::get('location/create', 'LocationController@create');
-    Route::get('location/delete', 'LocationController@delete');
-    Route::get('location/edit/{id}', 'LocationController@edit');
-    Route::post('location/save', 'LocationController@save');
-    Route::post('location/update', 'LocationController@update');
+    Route::get('tag', 'TagController@index');
+    Route::get('tag/create', 'TagController@create');
+    Route::get('tag/delete', 'TagController@delete');
+    Route::get('tag/edit/{id}', 'TagController@edit');
+    Route::post('tag/save', 'TagController@save');
+    Route::post('tag/update', 'TagController@update');
 
-    //Shift
-    Route::get('shift', 'ShiftController@index');
-    Route::get('shift/create', 'ShiftController@create');
-    Route::get('shift/delete', 'ShiftController@delete');
-    Route::get('shift/edit/{id}', 'ShiftController@edit');
-    Route::post('shift/save', 'ShiftController@save');
-    Route::post('shift/update', 'ShiftController@update');
+    //size
+    Route::get('size', 'SizeController@index');
+    Route::get('size/create', 'SizeController@create');
+    Route::get('size/delete', 'SizeController@delete');
+    Route::get('size/edit/{id}', 'SizeController@edit');
+    Route::post('size/save', 'SizeController@save');
+    Route::post('size/update', 'SizeController@update');
 
     //Company
-    Route::get('company', 'CompanyController@index');
-    Route::get('company/create', 'CompanyController@create');
-    Route::get('company/delete', 'CompanyController@delete');
-    Route::get('company/edit/{id}', 'CompanyController@edit');
-    Route::post('company/save', 'CompanyController@save');
-    Route::post('company/update', 'CompanyController@update');
-    Route::get('company/detail/{id}', 'CompanyController@detail');
+    Route::get('product', 'ProductController@index');
+    Route::get('product/create', 'ProductController@create');
+    Route::get('product/delete', 'ProductController@delete');
+    Route::get('product/edit/{id}', 'ProductController@edit');
+    Route::post('product/save', 'ProductController@save');
+    Route::post('product/update', 'ProductController@update');
+    Route::get('product/detail/{id}', 'ProductController@detail');
 
     //Category
     Route::get('category', 'CategoryController@index');
@@ -83,12 +83,12 @@ Route::prefix('backend')->group(function() {
     Route::post('category/update', 'CategoryController@update');
 
     //Job
-    Route::get('job', 'JobController@index');
-    Route::get('job/create', 'JobController@create');
-    Route::get('job/delete', 'JobController@delete');
-    Route::get('job/edit/{id}', 'JobController@edit');
-    Route::post('job/save', 'JobController@save');
-    Route::post('job/update', 'JobController@update');
-    Route::get('job/search', 'JobController@search');
-    Route::get('job/detail/{id}', 'JobController@detail');
+    Route::get('avibility', 'AvibilityController@index');
+    Route::get('avibility/create', 'AvibilityController@create');
+    Route::get('avibility/delete', 'AvibilityController@delete');
+    Route::get('avibility/edit/{id}', 'AvibilityController@edit');
+    Route::post('avibility/save', 'AvibilityController@save');
+    Route::post('avibility/update', 'AvibilityController@update');
+    Route::get('avibility/search', 'AvibilityController@search');
+    Route::get('avibility/detail/{id}', 'AvibilityController@detail');
 });

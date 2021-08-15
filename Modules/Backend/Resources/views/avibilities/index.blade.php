@@ -4,8 +4,8 @@
 <div class="card card-gray">
 	<div class="card-header">
 		<div class="header-block">
-			<p class="title"> Shift
-				<a href="{{url('backend/shift/create')}}"class="btn btn-info-outline btn-oval btn-sm mx-left">
+			<p class="title"> Avilability
+				<a href="{{url('backend/avibility/create')}}"class="btn btn-info-outline btn-oval btn-sm mx-left">
                     <i class="fa fa-plus-circle"></i> Create
                 </a>
 			</p>
@@ -40,16 +40,16 @@
                             $pagex = 1;
                         $i = 22 * ($pagex - 1) + 1;
                     ?>
-                    @foreach($rs as $cat)
+                    @foreach($ls as $cat)
                         <tr>
                             <td>{{$i++}}</td>
                             <td>{{$cat->name}}</td>
                             <td>
-                                <a href="{{url('backend/shift/delete?id='.$cat->id)}}" title="Delete" class='text-danger'
+                                <a href="{{url('backend/avibility/delete?id='.$cat->id)}}" title="Delete" class='text-danger'
                                  onclick="return confirm('You want to delete?')">
                                     <i class="fa fa-trash"></i>
                                 </a>&nbsp;
-                                <a href="{{url('backend/shift/edit/'.$cat->id)}}" class="text-success" title="Edit">
+                                <a href="{{url('backend/avibility/edit/'.$cat->id)}}" class="text-success" title="Edit">
                                     <i class="fa fa-edit"></i>
                                 </a>
                             </td>
@@ -57,7 +57,7 @@
                     @endforeach
 				</tbody>
 			</table>
-			{{$rs->links()}}
+			{{$ls->links()}}
 		</div>
 		
 	</div>
@@ -67,10 +67,8 @@
 @section('js')
 	<script>
         $(document).ready(function () {
-            $("#sidebar-menu li ").removeClass("active open");
-			$("#sidebar-menu li ul li").removeClass("active");
-			
-            $("#menu_shift").addClass("active open");
+            $("#sidebar-menu li").removeClass('active');
+		    $("#menu_job").addClass('active');
         })
     </script>
 @endsection

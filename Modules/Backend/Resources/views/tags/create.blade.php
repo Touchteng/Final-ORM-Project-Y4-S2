@@ -4,8 +4,8 @@
 <div class="card card-gray">
 	<div class="card-header">
 		<div class="header-block">
-			<p class="title"> Create Shift
-				<a href="{{url('backend/shift')}}"class="btn btn-info-outline btn-oval btn-sm mx-left">
+			<p class="title"> Create Tag
+				<a href="{{url('backend/tag')}}"class="btn btn-info-outline btn-oval btn-sm mx-left">
                     <i class="fa fa-reply"></i> Back
                 </a>
 			</p>
@@ -47,7 +47,7 @@
                         </ul>
                     </div>
                 @endif
-                <form action="{{url('backend/shift/save')}}" method="POST">
+                <form action="{{url('backend/tag/save')}}" method="POST">
                     {{csrf_field()}}
                     <div class="form-group row">
                         <label for="name" class="col-sm-3">Name<span class="text-danger">*</span></label>
@@ -74,10 +74,8 @@
 @section('js')
 	<script>
         $(document).ready(function () {
-            $("#sidebar-menu li ").removeClass("active open");
-			$("#sidebar-menu li ul li").removeClass("active");
-			
-            $("#menu_shift").addClass("active open");
+            $("#sidebar-menu li").removeClass('active');
+		    $("#menu_location").addClass('active');
         })
     </script>
 @endsection

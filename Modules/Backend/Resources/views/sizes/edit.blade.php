@@ -4,8 +4,8 @@
 <div class="card card-gray">
 	<div class="card-header">
 		<div class="header-block">
-			<p class="title"> Edit Shift
-				<a href="{{url('backend/shift')}}"class="btn btn-info-outline btn-oval btn-sm mx-left">
+			<p class="title"> Edit Size
+				<a href="{{url('backend/size')}}"class="btn btn-info-outline btn-oval btn-sm mx-left">
                     <i class="fa fa-reply"></i> Back
                 </a>
 			</p>
@@ -47,7 +47,7 @@
                         </ul>
                     </div>
                 @endif
-                <form action="{{url('backend/shift/update')}}" method="POST">
+                <form action="{{url('backend/size/update')}}" method="POST">
                     {{csrf_field()}}
                     <input type="hidden" name="id" value="{{$r->id}}">
                     <div class="form-group row">

@@ -17,8 +17,7 @@
                 <div class="card">
                     <header class="auth-header">
                         <h1 class="auth-title">
-                            <img src="{{asset('admin/images/logo.png')}}" alt="Vdoo ERP">
-                            Job Portal
+                            Souvenir Shop
                         </h1>
                     </header>
                     <div class="auth-content">

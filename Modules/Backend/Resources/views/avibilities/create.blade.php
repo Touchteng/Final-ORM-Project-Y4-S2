@@ -4,8 +4,8 @@
 <div class="card card-gray">
 	<div class="card-header">
 		<div class="header-block">
-			<p class="title"> Create Location
-				<a href="{{url('backend/location')}}"class="btn btn-info-outline btn-oval btn-sm mx-left">
+			<p class="title"> Create Avilability
+				<a href="{{url('backend/avibility')}}"class="btn btn-info-outline btn-oval btn-sm mx-left">
                     <i class="fa fa-reply"></i> Back
                 </a>
 			</p>
@@ -47,7 +47,7 @@
                         </ul>
                     </div>
                 @endif
-                <form action="{{url('backend/location/save')}}" method="POST">
+                <form action="{{url('backend/avibility/save')}}" method="POST">
                     {{csrf_field()}}
                     <div class="form-group row">
                         <label for="name" class="col-sm-3">Name<span class="text-danger">*</span></label>
@@ -75,7 +75,7 @@
 	<script>
         $(document).ready(function () {
             $("#sidebar-menu li").removeClass('active');
-		    $("#menu_location").addClass('active');
+		    $("#menu_job").addClass('active');
         })
     </script>
 @endsection

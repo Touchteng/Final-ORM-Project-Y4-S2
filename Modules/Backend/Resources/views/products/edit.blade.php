@@ -4,8 +4,8 @@
 <div class="card card-gray">
 	<div class="card-header">
 		<div class="header-block">
-			<p class="title"> Edit Company
-				<a href="{{url('backend/company')}}"class="btn btn-info-outline btn-oval btn-sm mx-left">
+			<p class="title"> Edit Product
+				<a href="{{url('backend/product')}}"class="btn btn-info-outline btn-oval btn-sm mx-left">
                     <i class="fa fa-reply"></i> Back
                 </a>
 			</p>
@@ -35,45 +35,73 @@
                         </div>
                     </div>
                 @endif
-                @if ($errors->any())
-                    <div class="alert alert-danger" role="alert">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
-                <form action="{{url('backend/company/update')}}" method="POST" enctype="multipart/form-data">
+                <form action="{{url('backend/product/update')}}" method="POST" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-sm-7">
                                 {{csrf_field()}}
                             <input type="hidden" name="id" value="{{$h->id}}">
                             <div class="form-group row">
-                                <label for="name" class="col-sm-4">Name<span class="text-danger">*</span></label>
+                                <label for="name" class="col-sm-4">Product Name<span class="text-danger">*</span></label>
                                 <div class="col-sm-8">
                                     <input type="text" class="form-control" id="name" name="name" 
                                         value="{{$h->name}}" required>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="location" class="col-sm-4">Location<span class="text-danger">*</span></label>
+                                <label for="size" class="col-sm-4">Size<span class="text-danger">*</span></label>
                                 <div class="col-sm-8">
-                                    <select name="location" id="location" class="form-control chosen-select" required>
+                                    <select name="size" id="size" class="form-control chosen-select" required>
                                         <option value="">--select--</option>
-                                        @foreach($ls as $d)
-                                        <option value="{{$d->name}}" {{$d->name==$h->location?'selected':''}}>{{$d->name}}</option>
+                                        @foreach($size as $d)
+                                        <option value="{{$d->id}}" {{$d->id==$h->size_id?'selected':''}}>{{$d->name}}</option>
                                         @endforeach
                                     </select>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="description" class="col-sm-4">Description</label>
+                                <label for="category" class="col-sm-4">Category<span class="text-danger">*</span></label>
                                 <div class="col-sm-8">
-                                <textarea name="description" class="form-control" id="description" cols="30" rows="10">{{$h->description}}</textarea>
+                                    <select name="category" id="category" class="form-control chosen-select" required>
+                                        <option value="">--Select--</option>
+                                        @foreach($cat as $d)
+                                        <option value="{{$d->id}}" {{$d->id==$h->category_id?'selected':''}}>{{$d->name}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="price" class="col-sm-4">Price<span class="text-danger">*</span></label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="price" name="price" 
+                                        value="{{$h->price}}" required>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="tag" class="col-sm-4">Tag<span class="text-danger">*</span></label>
+                                <div class="col-sm-8">
+                                    <select name="tag" id="tag" class="form-control chosen-select" required>
+                                        <option value="">--Select--</option>
+                                        @foreach($tag as $d)
+                                        <option value="{{$d->id}}" {{$d->id==$h->tag_id?'selected':''}}>{{$d->name}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="avibility" class="col-sm-4">Avilability<span class="text-danger">*</span></label>
+                                <div class="col-sm-8">
+                                    <select name="avibility" id="avibility" class="form-control chosen-select" required>
+                                        <option value="">--Select--</option>
+                                        @foreach($avi as $d)
+                                        <option value="{{$d->id}}" {{$d->id==$h->avibility_id?'selected':''}}>{{$d->name}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="description" class="col-sm-4">Detail</label>
+                                <div class="col-sm-8">
+                                <textarea name="detail" class="form-control" id="detail" cols="30" rows="10">{{$h->detail}}</textarea>
                                 </div>
                             </div>
                             <div class="form-group row">

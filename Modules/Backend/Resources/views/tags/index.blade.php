@@ -4,8 +4,8 @@
 <div class="card card-gray">
 	<div class="card-header">
 		<div class="header-block">
-			<p class="title"> Location
-				<a href="{{url('backend/location/create')}}"class="btn btn-info-outline btn-oval btn-sm mx-left">
+			<p class="title"> Tag
+				<a href="{{url('backend/tag/create')}}"class="btn btn-info-outline btn-oval btn-sm mx-left">
                     <i class="fa fa-plus-circle"></i> Create
                 </a>
 			</p>
@@ -45,11 +45,11 @@
                             <td>{{$i++}}</td>
                             <td>{{$cat->name}}</td>
                             <td>
-                                <a href="{{url('backend/location/delete?id='.$cat->id)}}" title="Delete" class='text-danger'
+                                <a href="{{url('backend/tag/delete?id='.$cat->id)}}" title="Delete" class='text-danger'
                                  onclick="return confirm('You want to delete?')">
                                     <i class="fa fa-trash"></i>
                                 </a>&nbsp;
-                                <a href="{{url('backend/location/edit/'.$cat->id)}}" class="text-success" title="Edit">
+                                <a href="{{url('backend/tag/edit/'.$cat->id)}}" class="text-success" title="Edit">
                                     <i class="fa fa-edit"></i>
                                 </a>
                             </td>

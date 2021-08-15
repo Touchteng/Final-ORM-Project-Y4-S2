@@ -4,8 +4,8 @@
 <div class="card card-gray">
 	<div class="card-header">
 		<div class="header-block">
-			<p class="title"> Job
-				<a href="{{url('backend/job/create')}}"class="btn btn-info-outline btn-oval btn-sm mx-left">
+			<p class="title"> Product
+				<a href="{{url('backend/product/create')}}"class="btn btn-info-outline btn-oval btn-sm mx-left">
                     <i class="fa fa-plus-circle"></i> Create
                 </a>
 			</p>
@@ -30,11 +30,12 @@
 					<tr>
 						<th>#</th>
                         <th>Name</th>
-                        <th>Company</th>
-                        <th>Location</th>
+                        <th>Size</th>
                         <th>Category</th>
-                        <th>Feature</th>
-						<th>Actions</th>
+                        <th>Price</th>
+                        <th>Avilability</th>
+                        <th>Tag</th>
+                        <th>Action</th>
 					</tr>
 				</thead>
 				<tbody>			
@@ -44,24 +45,25 @@
                             $pagex = 1;
                         $i = 22 * ($pagex - 1) + 1;
                     ?>
-                    @foreach($rs as $cat)
+                    @foreach($pro as $cat)
                         <tr>
                             <td>{{$i++}}</td>
                             <td>
-                                <a href="{{url('backend/job/detail/'.$cat->id)}}">
+                                <a href="{{url('backend/product/detail/'.$cat->id)}}">
                                     {{$cat->name}}
                                 </a>
                             </td>
-                            <td>{{$cat->company}}</td>
-                            <td>{{$cat->lname}}</td>
-                            <td>{{$cat->category}}</td>
-                            <td>{{$cat->feature}}</td>
+                            <td>{{$cat->sname}}</td>
+                            <td>{{$cat->cname}}</td>
+                            <td>{{$cat->price}}</td>
+                            <td>{{$cat->aviname}}</td>
+                            <td>{{$cat->tname}}</td>
                             <td>
-                                <a href="{{url('backend/job/delete?id='.$cat->id)}}" title="Delete" class='text-danger'
+                                <a href="{{url('backend/product/delete?id='.$cat->id)}}" title="Delete" class='text-danger'
                                  onclick="return confirm('You want to delete?')">
                                     <i class="fa fa-trash"></i>
                                 </a>&nbsp;
-                                <a href="{{url('backend/job/edit/'.$cat->id)}}" class="text-success" title="Edit">
+                                <a href="{{url('backend/product/edit/'.$cat->id)}}" class="text-success" title="Edit">
                                     <i class="fa fa-edit"></i>
                                 </a>
                             </td>
@@ -69,7 +71,7 @@
                     @endforeach
 				</tbody>
 			</table>
-			{{$rs->links()}}
+			{{$pro->links()}}
 		</div>
 		
 	</div>
@@ -77,12 +79,12 @@
 @endsection
 
 @section('js')
-	<script>
+<script>
         $(document).ready(function () {
             $("#sidebar-menu li ").removeClass("active open");
 			$("#sidebar-menu li ul li").removeClass("active");
 			
-            $("#menu_job").addClass("active open");
+            $("#menu_company").addClass("active open");
         })
     </script>
 @endsection

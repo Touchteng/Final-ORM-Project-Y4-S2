@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Admin Page | Job Portal</title>
+        <title>Admin Page | Souvenir Shop</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{{asset('admin/css/vendor.css')}}">
@@ -50,7 +50,7 @@
                         <div class="sidebar-header">
                             <div class="brand">
                                 <a href="{{url('backend')}}">
-                                    <img src="{{asset('admin/images/logo.png')}}" alt=""> Teng Admin
+                                    Souvenir Shop Admin
                                 </a>
                             </div>
                         </div>
@@ -60,25 +60,25 @@
                                     <a href="{{url('backend')}}">
                                     <i class="fa fa-tachometer-alt"></i> Dashboard </a>
                                 </li>
-                                <li id='menu_job'>
-                                    <a href="{{url('backend/job')}}">
-                                    <i class="fa fa-briefcase"></i> Job </a>
-                                </li>
                                 <li id='menu_company'>
-                                    <a href="{{url('backend/company')}}">
-                                    <i class="fa fa-building"></i> Company </a>
+                                    <a href="{{url('backend/product')}}">
+                                    <i class="fa fa-shopping-basket"></i> Product </a>
                                 </li>
                                 <li id='menu_category'>
                                     <a href="{{url('backend/category')}}">
-                                    <i class="fa fa-folder"></i> Category </a>
+                                    <i class="fa fa-cubes"></i> Category </a>
                                 </li>
                                 <li id='menu_location'>
-                                    <a href="{{url('backend/location')}}">
-                                    <i class="fa fa-map-marker"></i> Location </a>
+                                    <a href="{{url('backend/tag')}}">
+                                    <i class="fa fa-tags"></i> Tag </a>
+                                </li>
+                                <li id='menu_job'>
+                                    <a href="{{url('backend/avibility')}}">
+                                    <i class="fa fa-unlock"></i> Avilability </a>
                                 </li>
                                 <li id='menu_shift'>
-                                    <a href="{{url('backend/shift')}}">
-                                    <i class="fa fa-calendar"></i> Shift </a>
+                                    <a href="{{url('backend/size')}}">
+                                    <i class="fa fa-suitcase"></i> Size </a>
                                 </li>
                                 <li id='menu_security'>
                                     <a href="#"><i class="fas fa-shield-alt"></i>

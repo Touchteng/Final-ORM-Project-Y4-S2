@@ -6,21 +6,21 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 use DB;
-class LocationController extends Controller
+class AvibilityController extends Controller
 {
     public function  __construct(){
         $this->middleware('auth');
     }
 
     public function index(){
-    $data['ls'] = DB::table('locations')
+    $data['ls'] = DB::table('avibilities')
             ->where('active', 1)
             ->paginate(22);
-        return view('backend::locations.index', $data);
+        return view('backend::avibilities.index', $data);
     }
 
     public function create(){
-        return view("backend::locations.create");
+        return view("backend::avibilities.create");
     }
 
     public function save(Request $r){
@@ -28,22 +28,22 @@ class LocationController extends Controller
             'id' => $r->id,
             'name' => $r->name
         );
-        $i = DB::table('locations')->insert($data);
+        $i = DB::table('avibilities')->insert($data);
         if($i){
             $r->session()->flash('success', 'Data has been save!');
-            return redirect('backend/location/create');
+            return redirect('backend/avibility/create');
         }
         else{
                 $r->session()->flash('eror', 'Fail to save data!');
-                return redirect('backend/location/create')->withInput();
+                return redirect('backend/avibility/create')->withInput();
         }
     }
 
     public function edit($id){
-        $data['l'] = DB::table('locations')
+        $data['l'] = DB::table('avibilities')
              ->where('id', $id)
              ->first();
-         return view('backend::locations.edit', $data);
+         return view('backend::avibilities.edit', $data);
      }
  
     public function update(Request $r){
@@ -51,24 +51,24 @@ class LocationController extends Controller
             'id' => $r->id,
             'name' => $r->name,
         );
-        $i = DB::table('locations')
+        $i = DB::table('avibilities')
             ->where('id', $r->id)
             ->update($data);
         if($i){
             $r->session()->flash('success', 'Data has been save!');
-            return redirect('backend/location/edit/'.$r->id);
+            return redirect('backend/avibility/edit/'.$r->id);
         }
         else{
             $r->session()->flash('eror', 'Fail to save data!');
-            return redirect('backend/location/edit/'.$r->id);
+            return redirect('backend/avibility/edit/'.$r->id);
         }
     }
 
     public function delete(Request $r){
-        DB::table('locations')
+        DB::table('avibilities')
             ->where('id', $r->id)
             ->update(['active'=>0]);
         $r->session()->flash('success', 'Data has been removed!');
-        return redirect('backend/location');
+        return redirect('backend/avibility');
     }
 }

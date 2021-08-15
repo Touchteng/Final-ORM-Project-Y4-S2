@@ -4,8 +4,8 @@
 <div class="card card-gray">
 	<div class="card-header">
 		<div class="header-block">
-			<p class="title"> Edit Location
-				<a href="{{url('backend/location')}}"class="btn btn-info-outline btn-oval btn-sm mx-left">
+			<p class="title"> Edit Tag
+				<a href="{{url('backend/tag')}}"class="btn btn-info-outline btn-oval btn-sm mx-left">
                     <i class="fa fa-reply"></i> Back
                 </a>
 			</p>
@@ -47,7 +47,7 @@
                         </ul>
                     </div>
                 @endif
-                <form action="{{url('backend/location/update')}}" method="POST">
+                <form action="{{url('backend/tag/update')}}" method="POST">
                     {{csrf_field()}}
                     <input type="hidden" name="id" value="{{$l->id}}">
                     <div class="form-group row">
