@@ -9,7 +9,7 @@
                         @foreach ($slides as $item)
                             <li>
                                 <div class="seq-model">
-                                    <img data-seq src="{{ $item->photo }}" alt="" />
+                                    <img data-seq src="{{ asset($item->photo) }}" alt="" />
                                 </div>
                                 <div class="seq-title">
                                     {{-- <span data-seq>Save Up to 75% Off</span> --}}
@@ -43,7 +43,7 @@
                                     <div class="col-md-5 no-padding">
                                         <div class="aa-promo-left">
                                             <div class="aa-promo-banner">
-                                                <img src="{{ $item->product->photo }}" alt="img">
+                                                <img src="{{ asset($item->product->photo) }}" alt="img">
                                                 <div class="aa-prom-content">
                                                     <span>{{ $item->product->price }}</span>
                                                     <h4>{{ $item->name }}</h4>
@@ -60,7 +60,7 @@
                                         @if ($item->product)
                                             <div class="aa-single-promo-right">
                                                 <div class="aa-promo-banner">
-                                                    <img src="{{ $item->product->photo }}" alt="img">
+                                                    <img src="{{ asset($item->product->photo) }}" alt="img">
                                                     <div class="aa-prom-content">
                                                         <span>{{ $item->product->price }}</span>
                                                         <h4>{{ $item->name }}</h4>
@@ -94,7 +94,7 @@
                                             @foreach ($products as $item)
                                                 <li>
                                                     <figure>
-                                                        <a class="aa-product-img" href="#"><img src="{{ $item->photo }}"
+                                                        <a class="aa-product-img" href="#"><img src="{{ asset($item->photo) }}"
                                                                 alt="polo shirt img"></a>
                                                         <a class="aa-add-card-btn" href="#"><span
                                                                 class="fa fa-shopping-cart"></span>Add To Cart</a>
@@ -141,8 +141,8 @@
                                                                     <div class="simpleLens-container">
                                                                         <div class="simpleLens-big-image-container">
                                                                             <a class="simpleLens-lens-image"
-                                                                                data-lens-image="{{ $item->photo }}">
-                                                                                <img src="{{ $item->photo }}"
+                                                                                data-lens-image="{{ asset($item->photo) }}">
+                                                                                <img src="{{ asset($item->photo) }}"
                                                                                     class="simpleLens-big-image">
                                                                             </a>
                                                                         </div>

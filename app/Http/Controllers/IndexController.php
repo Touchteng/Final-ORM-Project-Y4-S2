@@ -27,10 +27,46 @@ class indexController extends Controller
 
         return view('pages.index', $data);
     }
+
     public function product()
     {
-        return view('pages.product');
+        $data['products'] = DB::table('products')->where('active',1)->orderBy('id','desc')->get();
+        foreach($data['products'] as $value)
+        {
+            $value->stock = DB::table('avibilities')->where('id',$value->avibility_id)->first();
+            $value->size = DB::table('sizes')->where('id',$value->size_id)->first();
+            $value->category = DB::table('categories')->where('id',$value->category_id)->first();
+        }
+
+        return view('pages.product', $data);
     }
+
+    public function productCategory($id)
+    {
+        $data['products'] = DB::table('products')->where('active',1)->where('category_id',$id)->get();
+        foreach($data['products'] as $value)
+        {
+            $value->stock = DB::table('avibilities')->where('id',$value->avibility_id)->first();
+            $value->size = DB::table('sizes')->where('id',$value->size_id)->first();
+            $value->category = DB::table('categories')->where('id',$value->category_id)->first();
+        }
+
+        return view('pages.product', $data);
+    }
+
+    public function productTag($id)
+    {
+        $data['products'] = DB::table('products')->where('active',1)->where('tag_id',$id)->get();
+        foreach($data['products'] as $value)
+        {
+            $value->stock = DB::table('avibilities')->where('id',$value->avibility_id)->first();
+            $value->size = DB::table('sizes')->where('id',$value->size_id)->first();
+            $value->category = DB::table('categories')->where('id',$value->category_id)->first();
+        }
+
+        return view('pages.product', $data);
+    }
+
     public function about()
     {
         return view('pages.about');
