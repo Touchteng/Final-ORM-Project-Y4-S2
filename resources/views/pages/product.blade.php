@@ -41,10 +41,10 @@
                             </div>
                         </div>
                         <div class="aa-product-catg-body">
-                            <ul class="aa-product-catg">
+                            <ul class="aa-product-catg" style="display: flex;flex-wrap:wrap;margin:-5px">
                                 <!-- start single product item -->
                                 @foreach ($products as $item)
-                                    <li>
+                                    <li style="width: calc(100% / 3 - 10px); box-sizing:border-box;margin:5px">
                                         <figure>
                                             <a class="aa-product-img" href="#"><img src="{{ asset($item->photo) }}"
                                                     alt="polo shirt img"></a>

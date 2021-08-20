@@ -9,10 +9,9 @@
                         @foreach ($slides as $item)
                             <li>
                                 <div class="seq-model">
-                                    <img data-seq src="{{ asset($item->photo) }}" alt="" />
+                                    <img data-seq src="{{ asset('img/slider/souvenir.jpg') }}" alt="" />
                                 </div>
                                 <div class="seq-title">
-                                    {{-- <span data-seq>Save Up to 75% Off</span> --}}
                                     <h2 data-seq>{{ $item->name }}</h2>
                                     <p data-seq>{!! strip_tags($item->detail) !!}</p>
                                     <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
@@ -38,7 +37,7 @@
                     <div class="aa-promo-area">
                         <div class="row">
                             <!-- promo left -->
-                            @foreach ($tags->take(1) as $item)
+                            @foreach ($categories->take(1) as $item)
                                 @if ($item->product)
                                     <div class="col-md-5 no-padding">
                                         <div class="aa-promo-left">
@@ -56,7 +55,7 @@
                             <!-- promo right -->
                             <div class="col-md-7 no-padding">
                                 <div class="aa-promo-right">
-                                    @foreach ($tags->slice(1) as $item)
+                                    @foreach ($categories->slice(1) as $item)
                                         @if ($item->product)
                                             <div class="aa-single-promo-right">
                                                 <div class="aa-promo-banner">

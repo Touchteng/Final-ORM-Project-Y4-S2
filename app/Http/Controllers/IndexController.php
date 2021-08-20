@@ -11,10 +11,10 @@ class indexController extends Controller
     {
         $data['slides'] = DB::table('products')->where('active',1)->orderBy('id','desc')->limit(5)->get();
 
-        $data['tags'] = DB::table('tags')->where('active',1)->get();
-        foreach($data['tags'] as $value)
+        $data['categories'] = DB::table('categories')->where('active',1)->get();
+        foreach($data['categories'] as $value)
         {
-           $value->product= DB::table('products')->where('active',1)->where('tag_id',$value->id)->orderBy('id','desc')->first();
+           $value->product= DB::table('products')->where('active',1)->where('category_id',$value->id)->orderBy('id','desc')->first();
         }
 
         $data['products'] = DB::table('products')->where('active',1)->limit(8)->orderBy('id','desc')->get();
