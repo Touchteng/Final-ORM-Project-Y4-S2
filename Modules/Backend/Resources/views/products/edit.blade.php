@@ -37,7 +37,7 @@
                 @endif
                 <form action="{{url('backend/product/update')}}" method="POST" enctype="multipart/form-data">
                     <div class="row">
-                        <div class="col-sm-7">
+                        <div class="col-sm-12">
                                 {{csrf_field()}}
                             <input type="hidden" name="id" value="{{$h->id}}">
                             <div class="form-group row">
