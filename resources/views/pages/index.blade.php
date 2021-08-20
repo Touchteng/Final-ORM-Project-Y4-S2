@@ -44,7 +44,7 @@
                                             <div class="aa-promo-banner">
                                                 <img src="{{ asset($item->product->photo) }}" alt="img">
                                                 <div class="aa-prom-content">
-                                                    <span>{{ $item->product->price }}</span>
+                                                    <span>$ {{ number_format($item->product->price, 2) }}</span>
                                                     <h4>{{ $item->name }}</h4>
                                                 </div>
                                             </div>
@@ -61,7 +61,7 @@
                                                 <div class="aa-promo-banner">
                                                     <img src="{{ asset($item->product->photo) }}" alt="img">
                                                     <div class="aa-prom-content">
-                                                        <span>{{ $item->product->price }}</span>
+                                                        <span>$ {{ number_format($item->product->price, 2) }}</span>
                                                         <h4>{{ $item->name }}</h4>
                                                     </div>
                                                 </div>
@@ -93,8 +93,8 @@
                                             @foreach ($products as $item)
                                                 <li>
                                                     <figure>
-                                                        <a class="aa-product-img" href="#"><img src="{{ asset($item->photo) }}"
-                                                                alt="polo shirt img"></a>
+                                                        <a class="aa-product-img" href="#"><img
+                                                                src="{{ asset($item->photo) }}" alt="polo shirt img"></a>
                                                         <a class="aa-add-card-btn" href="#"><span
                                                                 class="fa fa-shopping-cart"></span>Add To Cart</a>
                                                         <figcaption>
