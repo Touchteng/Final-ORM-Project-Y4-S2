@@ -67,6 +67,21 @@ class indexController extends Controller
         return view('pages.product', $data);
     }
 
+    public function search(Request $request)
+    {
+        $search = $request->input('search');
+
+        $data['products'] = DB::table('products')->where('active',1)->where('name','LIKE', '%' . $search . '%')->get();
+        foreach($data['products'] as $value)
+        {
+            $value->stock = DB::table('avibilities')->where('id',$value->avibility_id)->first();
+            $value->size = DB::table('sizes')->where('id',$value->size_id)->first();
+            $value->category = DB::table('categories')->where('id',$value->category_id)->first();
+        }
+
+        return view('pages.product', $data);
+    }
+
     public function about()
     {
         return view('pages.about');

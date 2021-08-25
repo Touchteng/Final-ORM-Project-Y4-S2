@@ -9,3 +9,9 @@ Route::get('/product','IndexController@product')->name('product');
 Route::get('/product/{id?}','IndexController@productCategory')->name('category');
 Route::get('/product/tag/{id?}','IndexController@productTag')->name('tag');
 Route::get('/about-us','IndexController@about')->name('about');
+
+
+Route::get('stripe/{id}', 'StripeController@stripe')->name('stripe');
+Route::post('stripe', 'StripeController@stripePost')->name('stripe.post');
+
+Route::get('/search','IndexController@search')->name('search');

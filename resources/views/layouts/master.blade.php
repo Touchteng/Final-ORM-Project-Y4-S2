@@ -30,6 +30,8 @@
     <!-- Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    @yield('style')
 
 </head>
 
@@ -70,45 +72,31 @@
                                 <a class="aa-cart-link" href="#">
                                     <span class="fa fa-shopping-basket"></span>
                                     <span class="aa-cart-title">SHOPPING CART</span>
-                                    <span class="aa-cart-notify">2</span>
+                                    <span class="aa-cart-notify">{{ $orders->count() }}</span>
                                 </a>
                                 <div class="aa-cartbox-summary">
                                     <ul>
-                                        <li>
-                                            <a class="aa-cartbox-img" href="#"><img src="img/product/1.jpg"
-                                                    alt="img"></a>
-                                            <div class="aa-cartbox-info">
-                                                <h4><a href="#">Product Name</a></h4>
-                                                <p>1 x $250</p>
-                                            </div>
-                                            <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
-                                        </li>
-                                        <li>
-                                            <a class="aa-cartbox-img" href="#"><img src="img/product/2.jpg"
-                                                    alt="img"></a>
-                                            <div class="aa-cartbox-info">
-                                                <h4><a href="#">Product Name</a></h4>
-                                                <p>1 x $250</p>
-                                            </div>
-                                            <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
-                                        </li>
-                                        <li>
-                                            <span class="aa-cartbox-total-title">
-                                                Total
-                                            </span>
-                                            <span class="aa-cartbox-total-price">
-                                                $500
-                                            </span>
-                                        </li>
+                                        @foreach ($orders as $item)
+                                            <li>
+                                                <a class="aa-cartbox-img" href="#"><img src="{{ asset($item->product->photo) }}"
+                                                        alt="img"></a>
+                                                <div class="aa-cartbox-info">
+                                                    <h4><a href="#">{{ $item->product->name }}</a></h4>
+                                                    <p>1 x $ {{ number_format($item->product->price, 2) }}</p>
+                                                </div>
+                                                <a class="aa-remove-product" href="#"><span
+                                                        class="fa fa-times"></span></a>
+                                            </li>
+                                        @endforeach
                                     </ul>
-                                    <a class="aa-cartbox-checkout aa-primary-btn" href="#">Checkout</a>
+                                    <a class="aa-cartbox-checkout aa-primary-btn" href="https://dashboard.stripe.com/test/payments" target="_blank">Checkout</a>
                                 </div>
                             </div>
                             <!-- / cart box -->
                             <!-- search box -->
                             <div class="aa-search-box">
-                                <form action="">
-                                    <input type="text" name="" id="" placeholder="Search here ex. 'man' ">
+                                <form action="{{ route('search') }}" method="GET">
+                                    <input type="text" name="search" id="" placeholder="Search here ex. 'man' ">
                                     <button type="submit"><span class="fa fa-search"></span></button>
                                 </form>
                             </div>
@@ -267,6 +255,9 @@
     <script type="text/javascript" src="{{ asset('souvenir/js/nouislider.js') }}"></script>
     <!-- Custom js -->
     <script src="{{ asset('souvenir/js/custom.js') }}"></script>
+
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+    @yield('stripe')
 
 </body>
 

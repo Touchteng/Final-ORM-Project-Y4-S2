@@ -14,7 +14,7 @@
                                 <div class="seq-title">
                                     <h2 data-seq>{{ $item->name }}</h2>
                                     <p data-seq>{!! strip_tags($item->detail) !!}</p>
-                                    <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
+                                    <a data-seq href="{{ route('category', $item->category_id) }}" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
                                 </div>
                             </li>
                         @endforeach
@@ -95,7 +95,7 @@
                                                     <figure>
                                                         <a class="aa-product-img" href="#"><img
                                                                 src="{{ asset($item->photo) }}" alt="polo shirt img"></a>
-                                                        <a class="aa-add-card-btn" href="#"><span
+                                                        <a class="aa-add-card-btn" href="{{ route('stripe', $item->id) }}"><span
                                                                 class="fa fa-shopping-cart"></span>Add To Cart</a>
                                                         <figcaption>
                                                             <h4 class="aa-product-title"><a href="#">{{ $item->name }}</a>
