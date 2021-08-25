@@ -64,6 +64,10 @@
                                     <a href="{{url('backend/product')}}">
                                     <i class="fa fa-shopping-basket"></i> Product </a>
                                 </li>
+                                <li id='menu_contact'>
+                                    <a href="{{url('backend/contact')}}">
+                                    <i class="fa fa-users"></i> Contact </a>
+                                </li>
                                 <li id='menu_category'>
                                     <a href="{{url('backend/category')}}">
                                     <i class="fa fa-cubes"></i> Category </a>

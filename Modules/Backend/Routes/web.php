@@ -91,4 +91,6 @@ Route::prefix('backend')->group(function() {
     Route::post('avibility/update', 'AvibilityController@update');
     Route::get('avibility/search', 'AvibilityController@search');
     Route::get('avibility/detail/{id}', 'AvibilityController@detail');
+
+    Route::get('contact','ContactController@index');
 });

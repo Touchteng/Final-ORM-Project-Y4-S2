@@ -87,4 +87,29 @@ class indexController extends Controller
         return view('pages.about');
     }
 
+    public function contact()
+    {
+        return view('pages.contact');
+    }
+
+    public function contact_save(Request $r)
+    {
+        $data = array(
+            'name' => $r->name,
+            'email' => $r->email,
+            'subject' => $r->subject,
+            'company' => $r->company,
+            'message' => $r->message
+        );
+        $i = DB::table('contacts')->insert($data);
+        if($i){
+            $r->session()->flash('success', 'Data has been sent!');
+            return redirect('/contact');
+        }
+        else{
+                $r->session()->flash('error', 'Fail to sent data!');
+                return redirect('/contact')->withInput();
+        }
+    }
+
 }
