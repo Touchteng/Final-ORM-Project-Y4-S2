@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\SendMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 
 class indexController extends Controller
 {
@@ -110,6 +112,20 @@ class indexController extends Controller
                 $r->session()->flash('error', 'Fail to sent data!');
                 return redirect('/contact')->withInput();
         }
+    }
+
+    public function storeEmailContact(Request $request)
+    {
+        $data = array(
+            'name'          =>  $request->name,
+            'email'         =>  $request->email,
+            'subject'       =>  $request->subject,
+            'company'       => $request->company,
+            'message'       =>  $request->message
+        );
+
+        Mail::to('soktheng28@gmail.com')->send(new SendMail($data));
+        return back()->with('success', 'Thanks for your contact...!');
     }
 
 }

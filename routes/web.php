@@ -17,4 +17,6 @@ Route::post('stripe', 'StripeController@stripePost')->name('stripe.post');
 Route::get('/search','IndexController@search')->name('search');
 
 Route::get('/contact', 'IndexController@contact')->name('contact');
-Route::post('/contact/post', 'IndexController@contact_save')->name('contact.post');
+// Route::post('/contact/post', 'IndexController@contact_save')->name('contact.post');
+
+Route::post('/contact', 'IndexController@storeEmailContact')->name('contact.store');
