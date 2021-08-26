@@ -120,7 +120,7 @@
                                                             <p>{!! $item->detail !!}</p>
                                                             <h4>Size : {{ $item->size->name }}</h4>
                                                             <div class="aa-prod-view-bottom">
-                                                                <a href="#" class="aa-add-to-cart-btn"><span
+                                                                <a href="{{ route('stripe', $item->id) }}" class="aa-add-to-cart-btn"><span
                                                                         class="fa fa-shopping-cart"></span>Add
                                                                     To Cart</a>
                                                             </div>
